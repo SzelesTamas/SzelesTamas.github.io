@@ -26,7 +26,8 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Full-time mechatronics student, developer and reinforcement learning enthusiast"
   location         : "Budapest, Hungary"
-  employer         : "Budapest University of Technology and Economics \nHUN-REN Institute for Computer Science and Control"
+  university       : "Budapest University of Technology and Economics"
+  employer         : "HUN-REN Institute for Computer Science and Control"
   uri              : # URL
   email            : "2szelestamas@gmail.com" 
 

@@ -496,7 +496,7 @@ header .container {
 }
 
 .filter-btn {
-  background-color: var(--bg-light);
+  background-color: white;
   border: 1px solid var(--border-color);
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-md);

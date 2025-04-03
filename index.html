@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Your Name</a>
+            </div>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+                    <p class="subtitle">Web Developer & Designer</p>
+                    <p class="description">Welcome to my personal website. Here you can find information about my work, projects, and interests.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary" id="download-cv">Download CV</a>
+                        <a href="https://linkedin.com/in/yourprofile" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder for profile image -->
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="container">
+                <h2>Featured Content</h2>
+                <div class="featured-grid">
+                    <div class="featured-item">
+                        <h3>Latest Blog Post</h3>
+                        <p>Check out my most recent thoughts and insights.</p>
+                        <a href="blog.html" class="read-more">Read More</a>
+                    </div>
+                    <div class="featured-item">
+                        <h3>Recent Project</h3>
+                        <p>See what I've been working on lately.</p>
+                        <a href="projects.html" class="read-more">View Project</a>
+                    </div>
+                    <div class="featured-item">
+                        <h3>Latest Publication</h3>
+                        <p>My most recent published work.</p>
+                        <a href="publications.html" class="read-more">View Publication</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; <span id="current-year"></span> Your Name. All Rights Reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

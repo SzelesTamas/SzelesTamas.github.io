@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html">Your Name</a>
+                <a href="index.html">Tamás Széles</a>
             </div>
             <nav>
                 <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -41,68 +41,26 @@
             <div class="container">
                 <div class="projects-filters">
                     <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="web">Web Development</button>
-                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-                    <button class="filter-btn" data-filter="other">Other Projects</button>
+                    <button class="filter-btn" data-filter="rl">Reinforcement Learning</button>
+                    <button class="filter-btn" data-filter="robotics">Robotics</button>
+                    <button class="filter-btn" data-filter="research">Research</button>
                 </div>
 
                 <div class="projects-grid">
-                    <article class="project-card" data-category="web">
+                    <article class="project-card" data-category="rl">
                         <div class="project-image">
                             <!-- Placeholder for project image -->
                             <div class="image-placeholder">
-                                <i class="fas fa-laptop-code"></i>
+                                <i class="fas fa-robot"></i>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h2 class="project-title">Project Title 1</h2>
-                            <p class="project-description">This is a description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="mobile">
-                        <div class="project-image">
-                            <!-- Placeholder for project image -->
-                            <div class="image-placeholder">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h2 class="project-title">Project Title 2</h2>
-                            <p class="project-description">This is a description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">Firebase</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> App Store</a>
-                                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-category="other">
-                        <div class="project-image">
-                            <!-- Placeholder for project image -->
-                            <div class="image-placeholder">
-                                <i class="fas fa-project-diagram"></i>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h2 class="project-title">Project Title 3</h2>
-                            <p class="project-description">This is a description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                            <h2 class="project-title">Deep Q-Learning for Atari Games</h2>
+                            <p class="project-description">Implementation of a Deep Q-Network (DQN) agent that learns to play various Atari games. The agent achieves human-level performance on several games through reinforcement learning.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">OpenAI Gym</span>
                             </div>
                             <div class="project-links">
                                 <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
@@ -111,7 +69,51 @@
                         </div>
                     </article>
 
-                    <article class="project-card" data-category="web">
+                    <article class="project-card" data-category="robotics">
+                        <div class="project-image">
+                            <!-- Placeholder for project image -->
+                            <div class="image-placeholder">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h2 class="project-title">Robotic Arm Control with RL</h2>
+                            <p class="project-description">A reinforcement learning approach to control a robotic arm for precise manipulation tasks. The system uses Proximal Policy Optimization (PPO) to learn optimal control policies.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">ROS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="research">
+                        <div class="project-image">
+                            <!-- Placeholder for project image -->
+                            <div class="image-placeholder">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h2 class="project-title">Multi-Agent Cooperation Framework</h2>
+                            <p class="project-description">A framework for studying cooperation in multi-agent reinforcement learning environments. This research project explores emergent behaviors in teams of learning agents.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">JAX</span>
+                                <span class="tech-tag">Custom Environments</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Paper</a>
+                                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="rl">
                         <div class="project-image">
                             <!-- Placeholder for project image -->
                             <div class="image-placeholder">
@@ -119,15 +121,15 @@
                             </div>
                         </div>
                         <div class="project-info">
-                            <h2 class="project-title">Project Title 4</h2>
-                            <p class="project-description">This is a description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                            <h2 class="project-title">RL Algorithm Benchmarking Tool</h2>
+                            <p class="project-description">A comprehensive benchmarking tool for comparing different reinforcement learning algorithms across a variety of environments and metrics. Developed at HUN-REN SZTAKI.</p>
                             <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">Matplotlib</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Documentation</a>
                                 <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                         </div>

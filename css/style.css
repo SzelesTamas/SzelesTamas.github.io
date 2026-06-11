@@ -4,23 +4,10 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('colors.css');
 
 /* ===== VARIABLES ===== */
 :root {
-  /* Colors - Light Theme (Darker text for better contrast) */
-  --bg-gradient-start: #dbe4ec;
-  --bg-gradient-mid: #e9eff5;
-  --bg-gradient-end: #d0dbe6;
-  
-  --text-main: #1e293b;
-  --text-muted: rgba(30, 41, 59, 0.7);
-
-  --glass-bg: rgba(255, 255, 255, 0.4);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-hover: rgba(255, 255, 255, 0.6);
-
-  --primary-accent: #1e293b;
-
   /* Typography */
   --font-main: 'Inter', sans-serif;
   --font-heading: 'Plus Jakarta Sans', sans-serif;
@@ -36,26 +23,6 @@
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
-}
-
-/* Dark Theme overrides */
-[data-theme="dark"] {
-  --bg-gradient-start: #0f172a;
-  --bg-gradient-mid: #1e293b;
-  --bg-gradient-end: #0b1120;
-
-  --text-main: #f8fafc;
-  --text-muted: rgba(248, 250, 252, 0.7);
-
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-hover: rgba(255, 255, 255, 0.15);
-
-  --primary-accent: #f8fafc;
-}
-
-[data-theme="dark"] .nav-menu {
-  background: rgba(15, 23, 42, 0.9) !important;
 }
 
 /* ===== BASE STYLES ===== */
@@ -206,6 +173,7 @@ header {
 }
 
 .nav-menu a {
+  display: inline-block;
   font-size: 0.95rem;
   font-weight: 500;
   opacity: 0.8;
@@ -579,8 +547,7 @@ input::placeholder, textarea::placeholder {
     top: 80px;
     left: 5%;
     width: 90%;
-    /* Override var(--glass-bg) for legibility on mobile */
-    background: rgba(255, 255, 255, 0.85);
+    background: var(--mobile-nav-bg);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     border: 1px solid var(--glass-border);

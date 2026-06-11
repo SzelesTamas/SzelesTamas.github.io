@@ -1,0 +1,39 @@
+/* ===== COLOR PALETTE ===== */
+
+:root {
+  /* Colors - Light Theme */
+  --bg-gradient-start: #dbe4ec;
+  --bg-gradient-mid: #e9eff5;
+  --bg-gradient-end: #d0dbe6;
+
+  --text-main: #1e293b;
+  --text-muted: rgba(30, 41, 59, 0.7);
+
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-hover: rgba(255, 255, 255, 0.6);
+
+  --primary-accent: #1e293b;
+
+  /* Mobile Nav Background (Less transparent for readability) */
+  --mobile-nav-bg: rgba(255, 255, 255, 0.85);
+}
+
+/* Dark Theme overrides */
+[data-theme="dark"] {
+  --bg-gradient-start: #0f172a;
+  --bg-gradient-mid: #1e293b;
+  --bg-gradient-end: #0b1120;
+
+  --text-main: #f8fafc;
+  --text-muted: rgba(248, 250, 252, 0.7);
+
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-hover: rgba(255, 255, 255, 0.15);
+
+  --primary-accent: #f8fafc;
+
+  /* Mobile Nav Background (Less transparent for readability) */
+  --mobile-nav-bg: rgba(15, 23, 42, 0.9);
+}

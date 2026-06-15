@@ -127,13 +127,8 @@ header {
   display: flex;
   align-items: center;
   gap: var(--spacing-lg);
-  background: var(--glass-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border);
-  border-radius: 50px;
+  background: transparent;
   padding: 0.5rem 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .logo a {
@@ -320,6 +315,8 @@ main {
   transition: transform var(--transition-normal);
   position: relative;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .featured-item:hover, .project-card:hover {
@@ -458,6 +455,15 @@ ul, ol {
 }
 
 /* Projects */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  z-index: 2;
+}
+
 .project-image {
   background: transparent;
   height: auto;
@@ -472,6 +478,21 @@ ul, ol {
 
 .image-placeholder {
   color: rgba(255,255,255,0.3);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-title {
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-description {
+  margin-bottom: var(--spacing-md);
+  flex-grow: 1;
 }
 
 /* Footer */
